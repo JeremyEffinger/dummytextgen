@@ -1,4 +1,21 @@
 const $generatedContent = $(".generatedContent");
 
-const $h1 = $("<h1></h1>").text("now we are cooking with Jquery");
-$generatedContent.prepend($h1);
+let $arguments = $(".form-check-input");
+
+console.log($arguments);
+const $button = $("#generateContentBtn");
+
+$button.click(function () {
+  url = "https://loripsum.net/api/";
+  for ($checkmark of $arguments) {
+    if ($checkmark.checked === true) {
+      console.log($checkmark.checked);
+      url = url.concat(`/${$checkmark.id}`);
+    }
+  }
+  console.log(url);
+  $.get(url, function (data) {
+    $generatedContent.empty();
+    $generatedContent.prepend(data);
+  });
+});

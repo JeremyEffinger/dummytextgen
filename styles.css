@@ -32,3 +32,11 @@ body {
   margin-bottom: 30px;
   text-align: left;
 }
+
+.btn-primary {
+  position: fixed;
+  left: 20px;
+}
+.delta {
+  font-size: x-large;
+}
