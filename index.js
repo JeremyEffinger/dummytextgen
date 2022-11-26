@@ -1,4 +1,4 @@
-const $body = $("body");
+const $generatedContent = $(".generatedContent");
 
 const $h1 = $("<h1></h1>").text("now we are cooking with Jquery");
-$body.prepend($h1);
+$generatedContent.prepend($h1);
