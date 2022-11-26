@@ -34,7 +34,8 @@ body {
 }
 
 .btn-primary {
-  position: fixed;
+  margin-bottom: 10px;
+  position: relative;
   left: 20px;
 }
 .delta {
