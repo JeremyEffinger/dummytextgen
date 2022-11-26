@@ -16,6 +16,12 @@ body {
 .generatedContent {
   position: fixed;
   left: 225px;
+  overflow-y: scroll;
+  min-height: 425px;
+  max-height: 1024px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  border: 1px solid #efefef;
 }
 
 .wrapper .sidebar {
